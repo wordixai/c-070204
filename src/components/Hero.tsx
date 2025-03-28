@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="text-left space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-             test 0009 hero Create Amazing <span className="text-gradient">Videos</span> with Ease
+              Create Amazing <span className="text-gradient">Videos</span> with Ease
             </h1>
             
             <p className="text-lg md:text-xl text-white/70 max-w-xl">
