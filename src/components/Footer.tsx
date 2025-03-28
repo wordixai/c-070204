@@ -12,7 +12,8 @@ const Footer = () => {
             <h3 className="mb-4 text-xl font-bold">
               <span className="text-gradient">Tech</span>Flow
             </h3>
-            <p className="text-white/70"> technology.
+            <p className="text-white/70">
+              Creating stunning video content with advanced animation technology.
               Make your ideas flow through compelling visuals.
             </p>
           </div>
