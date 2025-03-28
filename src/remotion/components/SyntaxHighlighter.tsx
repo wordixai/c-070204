@@ -1,23 +1,24 @@
 
 import React from 'react';
-import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { Light as SyntaxHighlighterLib } from 'react-syntax-highlighter';
 import js from 'react-syntax-highlighter/dist/esm/languages/hljs/javascript';
 import jsx from 'react-syntax-highlighter/dist/esm/languages/prism/jsx';
 import dracula from 'react-syntax-highlighter/dist/esm/styles/hljs/dracula';
 
-SyntaxHighlighter.registerLanguage('javascript', js);
-SyntaxHighlighter.registerLanguage('jsx', jsx);
+// Register languages
+SyntaxHighlighterLib.registerLanguage('javascript', js);
+SyntaxHighlighterLib.registerLanguage('jsx', jsx);
 
-interface Props {
+interface CodeHighlighterProps {
   code: string;
   language: string;
   showLineNumbers?: boolean;
 }
 
-export const SyntaxHighlighter: React.FC<Props> = ({ code, language, showLineNumbers = false }) => {
+export const SyntaxHighlighter: React.FC<CodeHighlighterProps> = ({ code, language, showLineNumbers = false }) => {
   return (
     <div className="font-mono text-lg leading-relaxed">
-      <SyntaxHighlighter
+      <SyntaxHighlighterLib
         language={language}
         style={dracula}
         showLineNumbers={showLineNumbers}
@@ -29,7 +30,7 @@ export const SyntaxHighlighter: React.FC<Props> = ({ code, language, showLineNum
         }}
       >
         {code}
-      </SyntaxHighlighter>
+      </SyntaxHighlighterLib>
     </div>
   );
 };
