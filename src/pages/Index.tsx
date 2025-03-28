@@ -1,10 +1,11 @@
-
 import { useState } from 'react';
 import { Player } from '@remotion/player';
 import { RemotionRoot } from '../remotion/Root';
 import { Button } from '@/components/ui/button';
 import { Slider } from '@/components/ui/slider';
 import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+import Hero from '@/components/Hero';
 
 const Index = () => {
   const [playing, setPlaying] = useState(false);
@@ -13,25 +14,8 @@ const Index = () => {
   
   return (
     <div className="min-h-screen flex flex-col bg-gray-900">
-      <header className="py-6 px-8 flex items-center justify-between bg-black/30 border-b border-white/10">
-        <h1 className="text-3xl font-bold text-white">
-          <span className="text-gradient">Tech</span>Flow Video Editor
-        </h1>
-        <div className="flex items-center space-x-4">
-          <Button 
-            variant="outline" 
-            className="text-white border-white/20 hover:bg-white/10"
-          >
-            Export
-          </Button>
-          <Button 
-            variant="default" 
-            className="bg-tech-gradient hover:opacity-90 text-white"
-          >
-            Share
-          </Button>
-        </div>
-      </header>
+      <Header />
+      <Hero />
       
       <main className="flex-1 p-8 flex flex-col">
         <div className="overflow-hidden rounded-xl border border-white/10 shadow-2xl bg-black/50 mx-auto max-w-6xl w-full">
