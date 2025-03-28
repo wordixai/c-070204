@@ -4,6 +4,7 @@ import { Player } from '@remotion/player';
 import { RemotionRoot } from '../remotion/Root';
 import { Button } from '@/components/ui/button';
 import { Slider } from '@/components/ui/slider';
+import Footer from '@/components/Footer';
 
 const Index = () => {
   const [playing, setPlaying] = useState(false);
@@ -95,6 +96,8 @@ const Index = () => {
           </div>
         </div>
       </main>
+      
+      <Footer />
     </div>
   );
 };
