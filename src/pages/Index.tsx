@@ -4,6 +4,7 @@ import { Player } from '@remotion/player';
 import { RemotionRoot } from '../remotion/Root';
 import { Button } from '@/components/ui/button';
 import { Slider } from '@/components/ui/slider';
+import Footer from '@/components/Footer';
 
 const Index = () => {
   const [playing, setPlaying] = useState(false);
@@ -75,7 +76,7 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             <div className="col-span-1 bg-white/5 rounded-lg p-4 hover:bg-white/10 transition cursor-pointer">
               <h3 className="text-white font-medium mb-2">Intro</h3>
               <p className="text-white/60 text-sm">Opening sequence with main title</p>
@@ -95,6 +96,8 @@ const Index = () => {
           </div>
         </div>
       </main>
+      
+      <Footer />
     </div>
   );
 };
