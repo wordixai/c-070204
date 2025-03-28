@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="py-6 px-8 flex items-center justify-between bg-black/30 border-b border-white/10">
       <h1 className="text-3xl font-bold text-white">
-        <span className="text-gradient">Tech1</span>
+        <span className="text-gradient">Tech</span>Flo
       </h1>
       <div className="flex items-center space-x-4">
         <Button 
