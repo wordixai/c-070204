@@ -14,7 +14,7 @@ const Footer = () => {
             </h3>
             <p className="text-white/70">
               Creating stunning video content with advanced animation technology.
-              Make your ideas flow through compelling visuals. test 0001
+              Make your ideas flow through compelling visuals.
             </p>
           </div>
 
