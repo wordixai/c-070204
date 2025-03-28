@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..800&display=swap');
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.font-sans {
+  font-family: 'Inter', sans-serif;
+}
+
+.code-container {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #1A1F2C;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background-color: white;
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #9b87f5, #33C3F0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.blur-bg {
+  backdrop-filter: blur(8px);
+  background-color: rgba(26, 31, 44, 0.6);
+}
